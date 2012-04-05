@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.sideBar}">
+		<g:Label addStyleNames="{style.titleBar}">User Menu</g:Label>
+		<g:HTMLPanel addStyleNames="{style.sideBarMenu}">
+			<g:Hyperlink targetHistoryToken='readQuran' ui:field="readQuran">Read Quran</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='editProfile' ui:field="editProfile">Edit Profile</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='resetPassword' ui:field="resetPassword">Reset Password</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='createNewArticle' ui:field="createArticle">Create New Article</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='editArticle' ui:field="editArticle">Edit Article</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='deleteArticle' ui:field="deleteArticle">Delete Article</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='postEvent' ui:field="postEvent">Post Event</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='publishEvent' ui:field="publishEvent">Publish/Unpublish Event</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='removeEvent' ui:field="removeEvent">Remove Event</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='postQuestion' ui:field="postQuestion">Post Question</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='removeUser' ui:field="removeUser">Remove User</g:Hyperlink>
+			<g:Hyperlink targetHistoryToken='logout' ui:field="logout">Logout</g:Hyperlink>
+		</g:HTMLPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

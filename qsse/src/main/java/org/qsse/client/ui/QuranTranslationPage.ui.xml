@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		<g:Label addStyleNames="{style.heading}" >Read Quran</g:Label>
+		<g:ListBox ui:field="selectSura" addStyleNames="{style.selectBox}">	</g:ListBox>
+		<g:ListBox ui:field="selectPage" addStyleNames="{style.selectBox}">	</g:ListBox>
+		<!-- <g:TextBox ui:field="searchTxt"  addStyleNames="{style.textBox}" />
+		<g:Label ui:field="search" styleName="{style.button}" >Search</g:Label> -->
+		
+		<g:FlowPanel ui:field="navigationPanel" addStyleNames="{style.quranNavigation}"></g:FlowPanel>
+		<div class="{style.qFrameTop}"></div>
+		
+		<div class="{style.qFrameMiddle}" id="middleFrame">
+			
+			<div ui:field="suraName" class="{style.suraName}"></div>
+			<div ui:field="bismillah" class="{style.bismillahTxt}"></div>
+			<div  ui:field="quranText" class="{style.quranText}"></div>
+		</div>
+		
+		<div class="{style.qFrameBottom}"></div>
+		<g:Hyperlink ui:field="next" targetHistoryToken="page" addStyleNames="{style.navNext}">Next &gt;&gt;</g:Hyperlink>
+		<g:Hyperlink ui:field="back" targetHistoryToken="page" addStyleNames="{style.navBack}">&lt;&lt; Back</g:Hyperlink>
+		<g:Label ui:field="page" addStyleNames="{style.navPage}" ></g:Label>
+		<div ui:field="sura" class="{style.hidden}">سورة</div>
+		<div ui:field="bismillahTxt" class="{style.hidden}">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

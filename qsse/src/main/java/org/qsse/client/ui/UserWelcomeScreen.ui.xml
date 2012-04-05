@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+
+	<g:HTMLPanel>
+		<!--<div>
+			<div class="display-inline {style.leftPanel}">
+				<g:Hyperlink ui:field="readQuran">Read Quran</g:Hyperlink>
+				<g:Hyperlink ui:field="selectSurah">Selct Surah</g:Hyperlink>
+				<g:Hyperlink ui:field="search">Search</g:Hyperlink>
+				<g:Hyperlink ui:field="symenticSearch">Symentic Search</g:Hyperlink>
+				<g:Hyperlink ui:field="postQuestion">Post Question</g:Hyperlink>
+				<g:Hyperlink ui:field="viewPostedQuestions">View Posted Questions</g:Hyperlink>
+				<g:Hyperlink ui:field="articleList">Article List</g:Hyperlink>
+			</div>
+		</div>-->
+	</g:HTMLPanel>
+</ui:UiBinder> 

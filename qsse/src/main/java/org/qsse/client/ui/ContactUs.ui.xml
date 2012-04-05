@@ -1,0 +1,82 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+	<g:HTMLPanel>
+		
+		<g:Label addStyleNames="{style.heading}" >Contact Us</g:Label>
+		
+		<g:HorizontalPanel width="900px">
+			
+			<g:VerticalPanel width="50%">
+				<g:HorizontalPanel spacing="10">
+					<g:Image url="images/con_address.png" width="19px" height="19px"></g:Image>
+					<g:InlineHTML>
+						Address: 103 Queen Street <br />
+						City: Lahore <br />
+						State: Punjab <br />
+						Country: Pakistan <br />
+					</g:InlineHTML>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel spacing="10">
+					<g:Image url="images/emailButton.png" width="19px" height="19px"></g:Image>
+					<g:InlineHTML>
+						<a href="mailto:email@obs.com">email@obs.com</a>
+					</g:InlineHTML>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel spacing="10">
+					<g:Image url="images/con_tel.png" width="19px" height="19px"></g:Image>
+					<g:InlineHTML>
+						Telephone: +92(0321)1122334
+					</g:InlineHTML>	
+				</g:HorizontalPanel>
+				<g:HorizontalPanel spacing="10">
+					<g:Image url="images/con_fax.png" width="19px" height="19px"></g:Image>
+					<g:InlineHTML>
+						Fax: +92(041) 8167554
+					</g:InlineHTML>
+				</g:HorizontalPanel>
+				<g:HorizontalPanel spacing="10">
+					<g:Image url="images/con_mobile.png" width="19px" height="19px"></g:Image>
+					<g:InlineHTML>
+						Mobile: +92(0321)1122334
+					</g:InlineHTML>
+				</g:HorizontalPanel>
+			</g:VerticalPanel>
+			
+			<g:VerticalPanel width="50%">	
+				
+				<g:InlineHTML>
+					<p>Send us emil. All field are required.</p>
+				</g:InlineHTML>
+				
+				<g:VerticalPanel spacing="3">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Name:</g:Label>
+					<g:TextBox ui:field="name"  addStyleNames="{style.textBox}" />
+				</g:VerticalPanel>
+				
+				<g:VerticalPanel spacing="3">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Email:</g:Label>
+					<g:TextBox ui:field="email"  addStyleNames="{style.textBox}" />
+				</g:VerticalPanel>
+				
+				<g:VerticalPanel spacing="3">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Subject:</g:Label>
+					<g:TextBox ui:field="subject"  addStyleNames="{style.textBox}" />
+				</g:VerticalPanel>
+				
+				<g:VerticalPanel spacing="3">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Message:</g:Label>
+					<g:TextBox ui:field="Message"  addStyleNames="{style.textBox}" />
+				</g:VerticalPanel>
+				
+				<g:VerticalPanel spacing="3" width="100%">
+					<g:Label ui:field="submit" styleName="{style.button} {style.floatRight}" >Submit</g:Label>
+				</g:VerticalPanel>
+	
+			</g:VerticalPanel>
+
+		</g:HorizontalPanel>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

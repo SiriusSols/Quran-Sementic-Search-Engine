@@ -1,0 +1,74 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		
+		<g:Label addStyleNames="{style.heading}" >Profile Detail</g:Label>
+ 		<g:HorizontalPanel>
+			<!-- start of left side -->
+			<g:VerticalPanel styleName="{style.formBox}">		
+			
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">User ID:</g:Label>
+					<g:Label ui:field="userID" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+							
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">User Type:</g:Label>
+					<g:Label ui:field="userTypeList" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Email:</g:Label>
+					<g:Label ui:field="email" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">First Name:</g:Label>
+					<g:Label  ui:field="firstName" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Last Name:</g:Label>
+					<g:Label ui:field="lastName" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Date of Birth:</g:Label>
+					<g:Label  ui:field="dob" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Gender:</g:Label>
+					<g:Label ui:field="gender" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Address:</g:Label>
+					<g:Label ui:field="address" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Phone:</g:Label>
+					<g:Label ui:field="phone" addStyleNames="{style.detailLabel}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label ui:field="back" styleName="{style.button} {style.floatRight}" >Back</g:Label>
+				</g:HorizontalPanel>
+
+			</g:VerticalPanel>
+			<!-- End of left side -->
+			<!-- Start of right side -->
+			<g:VerticalPanel>	
+				
+				<g:Image ui:field="displayUserDp" url="images/noProfileImage.png" width="200px" height="200px"></g:Image>
+
+			</g:VerticalPanel>
+			<!-- End of right side -->
+		</g:HorizontalPanel>
+ 		
+	</g:HTMLPanel>
+</ui:UiBinder> 

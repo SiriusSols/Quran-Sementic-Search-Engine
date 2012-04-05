@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css"  rel="stylesheet" type="text/css" />
+<title>Sign up for the beta</title>
+
+
+
+</head>
+<body>
+<div id="header">
+	<div id="header_m">
+		<div id="logo">
+			<a href="index.html"></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li  class="active"><a href="/login">Login</a></li>
+				<li><a href="/ui/Cms1500.html?signup=1">Sing Up</a></li>
+				<li><a href="/ui/Cms1500.html">Form</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="content">
+	<div id="login_form">
+		<form id="form" method="post" action="/login">
+			<table>
+				<tr>
+					<td colspan="2">
+						<h1>Login</h1>
+					</td>
+				</tr>
+				<tr>
+					<td width="150">
+						<label for="email"><strong>User Name:</strong> </label>
+					</td>
+					<td>
+						<p id="email-div">
+							<input type="text" id="username" name="username" size="20" />
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="password"><strong>Password:</strong> </label>
+					</td>
+					<td>
+						<p id="password-div">
+							<input type="password" id="password" name="password" size="20" />
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right">
+						<div id="submit">
+							<input id="submit-button" type="submit" value="Continue" class="button"/> 
+							<img id="spinner" src="ajax-loader.gif" style="display: none;" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div id="discovery-failed-div" style="display: none">Sorry, but
+			either your email address is invalid or your email provider does not to
+			support . Try another email address.</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+<!-- Footer START -->
+<!-- <div id="footer">
+	<div id="footer_m">
+		<p>Copyright &copy; All Rights Reserved.<br />Powered by <a href="#">ABC</a></p>
+	</div>
+</div> -->
+<!-- Footer END -->
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		
+		<g:Label addStyleNames="{style.heading}" >Edit Profile</g:Label>
+		<g:Label ui:field="validationMessage" addStyleNames="{style.validationMessage}"></g:Label>
+		<g:FormPanel ui:field="profileUpdateForm">
+			<g:HorizontalPanel>
+				<!-- start of left side -->
+				<g:VerticalPanel styleName="{style.formBox}">		
+								
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">User Type: *</g:Label>
+						<g:Label ui:field="userTypeList"></g:Label>
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Email: *</g:Label>
+						<g:Label ui:field="email"></g:Label>
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">First Name: *</g:Label>
+						<g:TextBox ui:field="firstName"  addStyleNames="{style.textBox}" />
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Last Name:</g:Label>
+						<g:TextBox ui:field="lastName"  addStyleNames="{style.textBox}" />
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Date of Birth: *</g:Label>
+						<d:DateBox ui:field="dob" />
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Gender: *</g:Label>
+						<g:HorizontalPanel width="225px" height="32px" ui:field="genderPanel">
+							<g:RadioButton name="gender" ui:field="maleGender">Male</g:RadioButton>
+		  					<g:RadioButton name="gender" ui:field="femaleGender">Female</g:RadioButton>
+		  				</g:HorizontalPanel>
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Address:</g:Label>
+						<g:TextBox ui:field="address"  addStyleNames="{style.textBox}" />
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10">
+						<g:Label styleName="{style.labelWidth} {style.labelBig}">Phone:</g:Label>
+						<g:TextBox ui:field="phone"  addStyleNames="{style.textBox}" />
+					</g:HorizontalPanel>
+					
+					<g:HorizontalPanel spacing="10" width="100%">
+						<g:Label ui:field="update" styleName="{style.button} {style.floatRight}" >Update</g:Label>
+					</g:HorizontalPanel>
+		
+				</g:VerticalPanel>
+				<!-- End of left side -->
+				<!-- Start of right side -->
+				<g:VerticalPanel>	
+					<g:Image ui:field="displayUserDp" url="images/noProfileImage.jpg" width="200px" height="200px"></g:Image>
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Change Image:</g:Label>
+					<g:FileUpload ui:field="userDp"  addStyleNames="{style.textBox}" />
+				</g:VerticalPanel>
+				<!-- End of right side -->
+			</g:HorizontalPanel>
+		
+		</g:FormPanel>
+ 		
+	</g:HTMLPanel>
+</ui:UiBinder> 

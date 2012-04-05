@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		<g:Label addStyleNames="{style.heading}" >Discussion Question Answer</g:Label>
+		<br />
+		<g:HorizontalPanel width="100%">
+			<g:Label addStyleNames="{style.bold}" >Question:</g:Label>
+			<g:Image ui:field="flagQuestion" url="images/flag-off.png" width="24px" height="24px" addStyleNames="{style.flagImage}" />	
+		</g:HorizontalPanel>
+		
+		<div  addStyleNames="{style.bold} {style.underline}" ui:field="question" ></div>
+		<g:Label ui:field="validationMessage" addStyleNames="{style.validationMessage}"></g:Label>
+		
+		<g:VerticalPanel ui:field="postAnswerPanel">
+			<g:Label addStyleNames="{style.bold}" ui:field="postAnserHeading" >Post your answer: *</g:Label>			
+			<g:Button ui:field="postAnswer" addStyleNames="{style.button} {style.floatRight}">Post Answer</g:Button>
+		</g:VerticalPanel>
+		
+		
+		<g:FlowPanel ui:field="answersListPanel">
+			<g:Label addStyleNames="{style.bold}" >Answers:</g:Label>
+			<!-- Here answers load -->
+		</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

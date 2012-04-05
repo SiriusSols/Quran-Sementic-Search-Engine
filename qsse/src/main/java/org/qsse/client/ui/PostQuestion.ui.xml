@@ -1,0 +1,16 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+		
+	<g:HTMLPanel>
+		<h2>Get Answers of Your Questions:</h2>
+		<div class="{style.mainInnerWrapper}">
+			<div class="display-inline {style.labelQuestion}">Question</div>
+			<div class="display-inline {style.label}"><g:TextArea ui:field="question" styleName="{style.questionBox}"></g:TextArea></div>
+			<div class="{style.buttonFloat}">
+				<g:PushButton ui:field="postQuestion" styleName="{style.button}">Post Question</g:PushButton>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

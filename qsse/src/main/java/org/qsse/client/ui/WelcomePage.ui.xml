@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+	<g:HTMLPanel>
+		<g:Label addStyleNames="{style.heading}" >Quran Sementic Search Engine</g:Label>
+   		<div>
+			<P>This project aims to provide intelligent, authoritative responses to anyone’s question about Islam, whether it is from a Muslim or non-Muslim, and to help solve general and personal social problems by answering them within a strike. It intends to enhance the idea of spread Islam by providing immediate answer to the user’s questions through a web site to solve their problems. 
+The project proposal document describes the objectives and the goals of the software project in a more detailed manner.  
+			</P>
+   		</div>
+   		<g:HorizontalPanel width="100%">
+   			<g:Hyperlink targetHistoryToken='readQuran' ui:field="readQuran" addStyleNames="{style.heading} {style.centerLink}">Read Quran</g:Hyperlink>
+   			<g:Hyperlink targetHistoryToken='searchQuran' ui:field="searchQuran" addStyleNames="{style.heading} {style.centerLink}">Search Quran</g:Hyperlink>
+   		</g:HorizontalPanel>
+   		<g:FlowPanel ui:field="latestArticles">
+   				<g:Label addStyleNames="{style.heading}" >Latest Articles</g:Label>
+   		</g:FlowPanel>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

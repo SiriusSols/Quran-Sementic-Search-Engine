@@ -1,0 +1,32 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		
+		<div class="{style.qFrame}">
+			<g:Label addStyleNames="{style.labelWidth} {style.labelBig}">Search Verse</g:Label>
+			<g:HorizontalPanel>
+				<g:ListBox ui:field="selectSura" addStyleNames="{style.selectBox}">	</g:ListBox>
+				<g:ListBox ui:field="selectAyah" addStyleNames="{style.selectBox}">	</g:ListBox>
+			</g:HorizontalPanel>
+			<g:Label addStyleNames="{style.labelWidth} {style.labelBig}">Search Word</g:Label>
+			<g:HorizontalPanel>
+				<g:TextBox ui:field="searchTxt"  addStyleNames="{style.textBox}" />
+				<g:Button ui:field="search" styleName="{style.buttonSearch}" >Search</g:Button> 
+			</g:HorizontalPanel>
+			<g:Label>e.g. Search for "Ajr" (reward), "wAjr" (and reward) and "wlAjr" (and the reward)</g:Label> 
+			<g:Label addStyleNames="{style.labelWidth} {style.labelBig}">Search Result</g:Label> 
+			<g:Label ui:field="totalSearches" /> 
+			<div class="{style.qFrameTop}"></div>
+			
+			<div class="{style.qFrameMiddle}" id="middleFrame">
+				<div  ui:field="quranText" class="{style.quranText}"></div>
+			</div>
+			
+			<div class="{style.qFrameBottom}"></div>
+			<div ui:field="sura" class="{style.hidden}">سورة</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

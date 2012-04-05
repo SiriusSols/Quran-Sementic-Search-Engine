@@ -1,0 +1,471 @@
+@CHARSET "ISO-8859-1";
+html{
+	}
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	color:#000;/*717171*/
+	background-color:#5b4f55;
+	}
+a{
+	text-decoration:underline;
+	color:#000;
+	cursor:pointer;
+	}
+a:hover{
+	text-decoration:none;
+	}
+img{
+	border:0;
+	}
+p{
+	margin: 10px 0;
+}	
+.important {
+	font-weight: bold;
+	}
+.wrapper{
+	overflow:auto;
+}
+.container{
+	width:980px;
+	margin:0 auto;
+	overflow:auto;
+	}
+.header{
+	background-color:#fff;
+	margin-top:20px;
+	margin-bottom:15px;
+	height:128px;
+	width:100%;
+	/*float:left;
+	clear:both;*/
+	}
+.headerWrapper{
+	width:950px;
+	margin:0 auto;
+}
+.sideBar{
+	width:200px;
+	float:left;
+	margin-bottom:10px;
+	padding-right:10px;
+	}
+.titleBar{
+	background-color:#5B4F55;
+	color:#fff;
+	height:30px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:30px;
+	padding-left:5px;
+	margin-bottom:5px;
+}
+.sideBarMenu{
+	padding-right:10px;
+}
+.sideBarMenu a{
+	line-height:24px;
+	width:100%;
+	height:26px;
+	display:block;
+	padding-left:10px;
+	border-bottom:1px solid #ececec;
+	text-decoration:none;
+}
+
+.sideBarMenu a:hover{
+	background-color:#ff6015;
+	color:#fff;
+}
+.logo{
+	background-image:url('images/logo.png');
+	width:241px;
+	height:84px;
+	margin-top:5px;
+	float:left;
+}
+.menubar{
+	float:left;
+	margin:4px 0 0 0;
+	width:100%;
+}
+.menubar ul{
+	margin:40px 0 0 0;
+	padding:0;
+	list-style:none;
+}
+.menubar ul li{
+	float:left;
+	margin:0 5px;
+}
+.menubar ul li a, .menubar a{
+	display:block;
+	padding:0 15px;
+	line-height:35px;
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
+.menubar ul li a.active, .active a, .menubar ul li a:hover, .menubar a:hover {
+	color:#fff;
+	background-color:#ff6015;
+}
+.content{
+	position:relative;
+	clear:both;
+	float:left;
+	width:100%;
+	background-color:#fff;
+	min-height:400px;
+}
+.contentWrapper{
+	width:950px;
+	margin:20px auto;
+}
+.footer{
+	clear:both;
+	float:left;
+	width:100%;
+}
+.footerWrapper{
+	width:950px;
+	height:100px;
+	margin:40px auto 0 auto;
+	border-top:1px solid #fff;			
+}
+.footerTxt{
+	margin:20px 0;
+	color:#fff;
+}
+.footerTxt a{
+	color:#fff;
+	margin-left:5px;
+}
+.heading{
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+}
+.featuredProducts{
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+}
+.featuredProducts table{
+	width:100%;
+}
+.catPanel{
+	margin-top:20px;
+}
+.catlist{
+	margin:20px 0 0 0;
+	padding:0;
+	list-style-image:url('images/bullet.jpg');
+	list-style-position:inside;
+	}
+.catlist li{
+	width:47%;
+	float:left;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.catlist li a{
+	font-size:16px;
+	line-height:30px;
+	font-weight:bold;
+}
+.placeBid a{
+	width:96px;
+	height:24px;
+	background-image:url('images/placebid.gif');
+	display:block;
+	float:right;
+}
+.productListWrapper{
+
+	margin:5px 0;
+	padding:5px 0;
+}
+.bottomBorder{
+	border-bottom:2px groove #a09f9f;
+	width:80%;
+	margin:0 auto;
+}
+.productDetail{
+	width:500px;
+}
+.productTitle{
+	font-size:18px;
+}
+.productDetailInner{
+	margin:10px 0;
+}
+.labelBold{
+	font-weight:bold;
+	font-size:12px;
+}
+.spacer{
+	margin:0 10px;
+	}
+.labelWidth{
+	width:140px;
+}
+.labelWidthLarge{
+	width:200px;
+}
+.textBox{
+	width:210px;
+	height:30px;
+	border:1px solid #cccccc;
+	font-size:14px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.textArea{
+	width:300px;
+	height:90px;
+	border:1px solid #cccccc;
+	font-size:14px;
+	padding:5px;
+}
+.selectBox{
+	width:222px;
+	height:35px;
+	border:1px solid #cccccc;
+	font-size:14px;
+	padding-left:5px;
+}
+.selectBox option{
+	font-size:20px;
+}
+.labelBig{
+	font-size:16px;
+	font-weight:bold;
+	margin:5px 0;
+}
+.detailLabel{
+	line-height:28px;
+}
+.loginBox{
+	margin:50px 0 0 50px;
+}
+.hidelogout{
+	display: none;
+}
+.searchButton,.postButton{
+	float: right;
+}
+.searchResults{
+	width:800px;
+	border: 1px solid #000000;
+}
+.button, .cellList button{
+	background-color:#262626;
+	height:32px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	line-height:32px;
+	font-size:14px;
+	cursor:pointer;
+	margin:10px 0;
+	padding:0px 10px;
+	border:none;		
+}
+.button:hover, .cellList button:hover{
+	background-color:#ff6015;
+}
+.buttonSearch{
+	background-color:#262626;
+	height:32px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	line-height:32px;
+	font-size:14px;
+	cursor:pointer;
+	padding:0px 10px;
+	border:none;		
+}
+.buttonSearch:hover{
+	background-color:#ff6015;
+}
+.questionBox{
+	width:320px;
+	height:100px;
+}
+.buttonFloat{
+	float: right;
+	width: 114px;
+}
+.mainInnerWrapper{
+	width: 504px;
+}
+.labelQuestion{
+	width: 150px;
+	vertical-align: top;
+	display: inline-table;	
+}
+.label{
+	width: 250px;
+	display: inline-table;
+}
+.leftPanel{
+	width:200px;
+	line-height: 2;
+}
+.registerLink{
+	margin-top:20px;
+}
+.registerLink a{
+	color:#ff6015;
+}
+.formBox{
+	margin-left:50px;
+}
+.floatRight{
+	float:right;
+	}
+.validationMessage{
+	font-size:16px;
+	font-weight:bold;
+	color:red;
+}
+.Red{
+	border: 1px solid #F00;
+}
+.qFrame{
+	margin:0 auto;
+	width:500px;
+}
+.qFrameTop{
+	background:#F7FCE3 url(images/frame.png) no-repeat;
+	height:23px;
+	width:500px;
+}
+.qFrameMiddle{
+	background:#F7FCE3 url(images/frame.png) repeat-y -500px 0;
+	line-height:2.35em;
+	font-family:"Traditional Arabic",Scheherazade,"Times New Roman";
+	padding:16px 14px;
+	min-height:250px;
+	width:472px;
+}
+.qFrameBottom{
+	background:#F7FCE3 url(images/frame.png) no-repeat 0 bottom;
+	height:23px;
+	width:500px;
+}
+.quranText{
+	direction:rtl;
+	font-size:1.15em;
+	text-align:justify;
+	width:412px;
+	margin:0px 30px;
+	padding:16px 0;
+	color:black;
+}
+.suraName{
+	font-family:Arial;
+	font-size:1.5em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:center;
+	line-height:49px;
+	background-image:url('images/heading_bg.png');
+	width:338px;
+	height:49px;
+	margin:0px auto 10px auto;
+}
+.ayaText{
+	font-family:Arial;
+	font-size:1.5em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:justify;
+}
+.ayaNumber{
+	font-family:Arial;
+	font-size:1.0em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:justify;
+}
+.hidden{
+	display:none;
+}
+.quranNavigation {
+	height:16px;
+	margin:3px auto;
+	width:500px;
+}
+.navNext{
+	width:55px;
+	float:right;
+	position:relative;
+	text-align:right;
+	font-size:14px;
+	text-decoration:none;
+}
+.navBack{
+	width:55px;
+	float:left;
+	position:relative;
+	font-size:14px;
+	text-decoration:none;
+}
+.navBack a, .navNext a{
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	cursor:pointer;
+}
+.navPage{
+	width:400px;
+	float:left;
+	position:absolute;
+	margin-left:55px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+}
+.bismillahTxt{
+	font-family:Arial;
+	font-size:1.5em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:center;
+	line-height:49px;
+	margin:0 auto;
+}
+.pageWidht{
+	min-width:690px;
+	max-width:100%;
+}
+.questionBold{
+	font-weight:bold;
+}
+.articleBox{
+	width:500px;
+	height:500px;
+}
+.bold{
+	font-weight:bold;
+}	
+.underline{
+	text-decoration:underline;
+}
+.flagImage{
+	float:right;
+	text-align:right;
+	cursor:pointer;
+}
+.centerLink{
+	margin:0 atuo;
+	text-align:center;
+}

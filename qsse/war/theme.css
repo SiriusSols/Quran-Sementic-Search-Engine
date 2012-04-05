@@ -1,0 +1,249 @@
+@CHARSET "ISO-8859-1";
+.active a{
+	color:#fff !important;
+	background-color:#ff6015;
+}
+.red{
+	border: 1px solid red !important;
+	}
+.sideBar{
+	width:200px;
+	float:left;
+	}
+/* DabeBox and DatePicker*/
+.gwt-DateBox {
+	width:210px;
+	height:30px;
+	border:1px solid #cccccc;
+	font-size:14px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.gwt-DatePicker{
+width:300px;
+}
+.gwt-DatePicker td,
+.datePickerMonthSelector td:focus {
+  outline: none
+}
+.datePickerDays {
+  width: 100%;
+  background: #938b82;
+  color: #fff;
+}
+.datePickerDay,
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  font-size: 75%;
+  text-align: center;
+  padding: 4px;
+  outline: none;
+}
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  background: #5e5552;
+  padding: 0px 4px 2px;
+  cursor: default;
+}
+.datePickerDay {
+  padding: 4px;
+  cursor: hand;
+  cursor: pointer;
+}
+.datePickerDayIsToday {
+  border: 1px solid #595959;
+  padding: 3px;
+}
+.datePickerDayIsWeekend {
+  background: #776f67;
+}
+.datePickerDayIsFiller {
+  color: #595959;
+}
+.datePickerDayIsValue {
+  background: #aaccee;
+}
+.datePickerDayIsDisabled {
+  color: #AAAAAA;
+  font-style: italic;
+}
+.datePickerDayIsHighlighted {
+  background: #ff6015;
+}
+.datePickerDayIsValueAndHighlighted {
+  background: #ff6015;
+}
+.datePickerMonthSelector {
+  background: #5E5552;
+  width: 100%;
+}
+td.datePickerMonth {
+  text-align: center;
+  vertical-align: center;
+  white-space: nowrap;
+  font-size: 70%;
+  font-weight: bold;
+  color: #fff;
+}
+.datePickerPreviousButton,
+.datePickerNextButton {
+  font-size: 120%;
+  line-height: 1em;
+  color: #fff;
+  cursor: hand;
+  cursor: pointer;
+  padding: 0px 4px;
+}
+.catlist{
+	background-image:url('images/bullet.jpg');
+	background-repeat:no-repeat;
+	width:47%;
+	float:left;
+	margin-left:10px;
+	margin-bottom:5px;
+	}
+.catName{
+	width:47%;
+	float:left;
+	margin-left:5px;
+	margin-bottom:5px;
+	}
+.catlist a, .catName a{
+	font-size:16px;
+	line-height:30px;
+	font-weight:bold;
+	padding-left:40px;
+}
+.catPanel{
+	background-image:url('images/bullet.jpg');
+	background-repeat:no-repeat;
+	width:47%;
+	float:left;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.catEdit a, .catDelete a{
+	float:right;
+	display:block;
+	width:16px;
+	height:16px;
+	margin-right:5px;
+}
+
+.catEdit a{
+	background-image: url(images/edit.jpg);
+}
+
+.catDelete a{
+	background-image: url(images/delete.jpg);
+}
+.button a{
+	background-color:#262626;
+	width:90px;
+	height:32px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	line-height:32px;
+	cursor:pointer;
+	margin:10px 0;
+	text-decoration:none;		
+}
+.button a:hover{
+	background-color:#ff6015;
+}
+
+.ayaText{
+	font-family:Arial;
+	font-size:1.5em;
+	line-height:1.5em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:justify;
+}
+.ayaNumber{
+	font-family:Arial;
+	font-size:1.0em;
+	line-height:1.5em;
+	font-weight:normal;
+	direction:rtl;
+	text-align:justify;
+}
+.aya-wrapper{
+	height:25px;
+}
+.aya-wrapper:hover{
+	background-color:;
+}
+.colUserName{
+	width:30%;
+	}
+.colEmail{
+	width:30%;
+	}
+.colUserType{
+	widht:30%;
+	}
+.colDelete{
+	width:5%;
+	}
+.colDetailLink{
+	width:5%;
+	}
+.pager{
+	margin:0 auto;
+	text-align:center;
+}
+.cellList{
+}
+.cellList button{
+	background-color:#262626;
+	height:22px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-weight:bold;
+	line-height:22px;
+	font-size:11px;
+	cursor:pointer;
+	margin:10px 0;
+	padding:0px 5px;
+	border:none;		
+}
+.cellList button:hover{
+	background-color:#ff6015;
+}
+.cellList img{
+	width:42px;
+	height:42px;
+	cursor:pointer;
+}
+.questionBold{
+	font-weight:bold;
+}
+.questionDetail{
+	font-size:11px;
+	}
+	
+.cellList img.publishImage{
+	width:16px;
+	height:16px;
+}
+.eventTable p{
+	margin:5px 0;
+}
+.labelBig{
+	font-size:16px;
+	font-weight:bold;
+	margin:5px 0;
+}
+.searchList{
+	list-style-type:decimal;
+	margin:0;
+	padding-right:10px;
+}
+.tokenFocus{
+	color:blue;
+	font-weight:bold;
+}

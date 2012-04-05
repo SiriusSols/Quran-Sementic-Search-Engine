@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+	<g:HTMLPanel styleName="{style.footerWrapper}">
+			<g:HorizontalPanel styleName="{style.footerTxt}">
+				<g:Label text="QSSE 2011 © |  " />
+				<g:Hyperlink targetHistoryToken='privacypolicy'>Privacy Policy</g:Hyperlink>
+			</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

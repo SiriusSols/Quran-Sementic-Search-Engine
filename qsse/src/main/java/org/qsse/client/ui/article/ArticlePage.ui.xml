@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		<g:Label ui:field="articleTitle" addStyleNames="{style.heading}" />
+		<g:Label ui:field="createdDate" />
+		<div ui:field="articleTxt"></div>
+		<g:HorizontalPanel spacing="10" width="100%">
+			<g:Label ui:field="back" styleName="{style.button} {style.floatRight}" >Back</g:Label>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

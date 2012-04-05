@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="style.css" />
+
+	<g:HTMLPanel>
+		
+		<g:Label ui:field="heading" addStyleNames="{style.heading}" >LOGIN</g:Label>
+		<g:Label ui:field="validationMessage" addStyleNames="{style.validationMessage}"></g:Label>
+		<g:VerticalPanel ui:field="loginBox" styleName="{style.loginBox}">		
+
+			<g:Label styleName="{style.labelWidth} {style.labelBig}">Email: *</g:Label>
+			<g:TextBox ui:field="email"  addStyleNames="{style.textBox}" />
+
+			<g:Label styleName="{style.labelWidth} {style.labelBig}">Password: *</g:Label>
+			<g:PasswordTextBox ui:field="password"  addStyleNames="{style.textBox}" />
+
+			<g:Button ui:field="login" styleName="{style.button}" >Login</g:Button>
+		
+			<g:Hyperlink ui:field="register" targetHistoryToken='register' styleName="{style.registerLink}">Create an Account</g:Hyperlink>
+				
+		</g:VerticalPanel>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

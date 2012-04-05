@@ -1,0 +1,10 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel>
+		<div style="margin:0 auto; width:600px; ">
+			<g:TabPanel ui:field="quranTab" ></g:TabPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

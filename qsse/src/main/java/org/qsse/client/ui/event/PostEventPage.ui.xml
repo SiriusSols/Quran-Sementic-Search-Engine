@@ -1,0 +1,51 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:com.google.gwt.user.datepicker.client">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		
+		<g:Label addStyleNames="{style.heading}" >Post Event</g:Label>
+		<g:Label ui:field="validationMessage" addStyleNames="{style.validationMessage}"></g:Label>
+		<g:FormPanel ui:field="eventForm">
+			<g:VerticalPanel styleName="{style.formBox}">		
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Event Title: *</g:Label>
+					<g:TextBox ui:field="eventTitle"  addStyleNames="{style.textBox}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Event Detail:</g:Label>
+					<g:TextArea ui:field="eventDetail"  addStyleNames="{style.textArea}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Event Location: *</g:Label>
+					<g:TextBox ui:field="eventLocation"  addStyleNames="{style.textBox}" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Starting Date: *</g:Label>
+					<d:DateBox ui:field="eventStartDate" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Ending Date: *</g:Label>
+					<d:DateBox ui:field="eventEndDate" />
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10">
+					<g:Label styleName="{style.labelWidth} {style.labelBig}">Event Timing: *</g:Label>
+					<g:TextBox ui:field="eventTiming"  addStyleNames="{style.textBox}" />
+					<g:Label styleName="">e.g. 11:00 am - 3:00 pm</g:Label>
+				</g:HorizontalPanel>
+				
+				<g:HorizontalPanel spacing="10" width="100%">
+					<g:Label ui:field="postEvent" styleName="{style.button} {style.floatRight}" >Post Event</g:Label>
+				</g:HorizontalPanel>
+	
+			</g:VerticalPanel>
+ 		</g:FormPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

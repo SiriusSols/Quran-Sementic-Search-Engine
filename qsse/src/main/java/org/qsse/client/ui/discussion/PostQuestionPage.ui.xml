@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../style.css" />
+	<g:HTMLPanel addStyleNames="{style.pageWidht}">
+		<g:Label addStyleNames="{style.heading}" >Post Question</g:Label>
+		<g:Label ui:field="validationMessage" addStyleNames="{style.validationMessage}"></g:Label>
+		<g:VerticalPanel>
+			<g:VerticalPanel spacing="10" width="100%" ui:field="questionPanel">
+				<g:Label styleName="{style.labelBig}">Write Your Question *</g:Label>
+			</g:VerticalPanel >
+			
+			<g:HorizontalPanel spacing="10" width="100%">
+				<g:Label ui:field="postQuestion" styleName="{style.button} {style.floatRight}" >Post Question</g:Label>
+			</g:HorizontalPanel>
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
