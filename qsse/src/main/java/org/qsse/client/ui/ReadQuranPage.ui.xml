@@ -4,9 +4,21 @@
 	<ui:style src="style.css" />
 	<g:HTMLPanel addStyleNames="{style.pageWidht}">
 		<g:Label addStyleNames="{style.heading}" >Read Quran</g:Label>
-		<div class="{style.qFrame}">
+		<g:VerticalPanel>
+			<g:HorizontalPanel>
+				<g:HorizontalPanel width="234px"/>
 			<g:ListBox ui:field="selectSura" addStyleNames="{style.selectBox}">	</g:ListBox>
 			<g:ListBox ui:field="selectPage" addStyleNames="{style.selectBox}">	</g:ListBox>
+			</g:HorizontalPanel>
+			<g:HorizontalPanel>
+				<g:HorizontalPanel width="234px"/>
+			<g:ListBox ui:field="selectAya" addStyleNames="{style.selectBox}">	</g:ListBox>
+			<g:ListBox ui:field="selectJuz" addStyleNames="{style.selectBox}">	</g:ListBox>
+			</g:HorizontalPanel>
+		</g:VerticalPanel>
+		<div class="{style.qFrame}">
+			
+			
 			
 			<g:FlowPanel ui:field="navigationPanel" addStyleNames="{style.quranNavigation}"></g:FlowPanel>
 		
@@ -16,7 +28,28 @@
 				
 				<div ui:field="suraName" class="{style.suraName}"></div>
 				<div ui:field="bismillah" class="{style.bismillahTxt}"></div>
-				<div  ui:field="quranText" class="{style.quranText}"></div>
+			<!--  	<div  ui:field="quranText" class="{style.quranText}"></div>     -->
+				<g:HorizontalPanel ui:field="hpnlTab">
+				<g:DecoratedTabPanel animationEnabled="true" ui:field="tabQuran" width="483px" height="281px">
+					<g:Tab text="Quran">
+						<g:HTMLPanel width="249px" height="262px" ui:field="quranTab">
+						<!--  <div class="{style.qFrameMiddle}" id="middleFrame">-->
+				<div  ui:field="quranText" class="{style.quranText}">   	
+				
+				</div> 
+			
+			</g:HTMLPanel>
+					</g:Tab>
+					<g:Tab text="Translation">
+						<g:HTMLPanel width="7cm" height="249px"/>
+					</g:Tab>
+				</g:DecoratedTabPanel>
+			</g:HorizontalPanel>
+				
+				
+				
+		
+		
 			</div>
 			
 			<div class="{style.qFrameBottom}"></div>

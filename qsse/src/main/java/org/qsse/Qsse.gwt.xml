@@ -16,7 +16,7 @@
  	<!-- User Agent -->
 	<set-property name="user.agent" value="safari"></set-property>
 	<inherits name="com.google.gwt.gears.Gears"/> 
-	 
+	 <inherits name="com.google.gwt.user.theme.standard.Standard"/>
 	<set-configuration-property name="UiBinder.useSafeHtmlTemplates" value="true" />
 	
 	<!-- CKEditor  -->

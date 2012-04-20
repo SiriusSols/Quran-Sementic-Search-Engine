@@ -19,6 +19,7 @@ import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Hyperlink;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TabPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -75,6 +76,9 @@ public class ReadQuranPage extends Composite implements Page {
 	@UiField
 	Label page;
 	
+	@UiField 
+	TabPanel tabQuran;
+	
 	int numberOfPages = 0;
 	int pageNumber = 0;
 	
@@ -110,7 +114,6 @@ public class ReadQuranPage extends Composite implements Page {
 		action.setChapterNumber(chapterNumber);
 		action.setStart(start);
 		action.setEnd(end);
-		
 		return action;
 	}
 
@@ -125,6 +128,9 @@ public class ReadQuranPage extends Composite implements Page {
 
 			@Override
 			public void onSuccess(ReadQuranResult result) {
+				
+				tabQuran.selectTab(0);
+				
 				suraName.setInnerHTML(sura.getInnerText() + " " + result.getSuraName());
 				quranText.setInnerHTML(result.getQuranText());
 				page.setText(String.valueOf(result.getPage()));

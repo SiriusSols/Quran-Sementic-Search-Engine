@@ -4,6 +4,7 @@ import net.customware.gwt.dispatch.client.DispatchAsync;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.dom.client.Style.Unit;
 import com.google.gwt.event.dom.client.ChangeEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -12,14 +13,20 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.DecoratedTabPanel;
+import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.ListBox;
+import com.google.gwt.user.client.ui.TabLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import org.qsse.client.actions.GetSuraList;
 import org.qsse.client.actions.Search;
 import org.qsse.shared.dto.SearchResult;
 import org.qsse.shared.dto.SuraListResult;
+import com.google.gwt.user.client.ui.TabPanel;
+import com.google.gwt.user.client.ui.HorizontalPanel;
+import com.google.gwt.user.client.ui.HTMLPanel;
 
 public class QuranSearchPage extends Composite implements Page {
 
@@ -31,13 +38,15 @@ public class QuranSearchPage extends Composite implements Page {
 	private final DispatchAsync dispatch;
 	private final PageContainer pageContainer;
 
+
 	public QuranSearchPage(PageContainer pageContainer, DispatchAsync dispatch) {
 		initWidget(uiBinder.createAndBindUi(this));
 		this.dispatch = dispatch;
 		this.pageContainer = pageContainer;
 		populateSuraList();
 		quranText.setInnerHTML("No search result.");
-		
+		tabQuran.selectTab(0);
+
 	}
 	
 	@UiField
@@ -60,6 +69,10 @@ public class QuranSearchPage extends Composite implements Page {
 	
 	@UiField
 	DivElement sura;
+	@UiField HorizontalPanel hpnlTab;
+	@UiField TabPanel tabQuran;
+	@UiField HTMLPanel quranTab;
+	
 	
 	public Search searchAction(){
 		
@@ -82,6 +95,7 @@ public class QuranSearchPage extends Composite implements Page {
 			public void onSuccess(SearchResult result) {
 				if(result.getTotalResult() != 0){
 					quranText.setInnerHTML(result.getQuranText());
+					
 					totalSearches.setText("Total Search Results =  " + String.valueOf(result.getTotalResult()));
 				}
 				else{
